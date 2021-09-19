@@ -1,4 +1,4 @@
-package com.nfragiskatos.tmdbclient_class.data
+package com.nfragiskatos.tmdbclient_class.data.model.tvshow
 
 
 import com.google.gson.annotations.SerializedName

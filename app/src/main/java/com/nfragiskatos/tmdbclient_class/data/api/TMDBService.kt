@@ -1,8 +1,8 @@
 package com.nfragiskatos.tmdbclient_class.data.api
 
-import com.nfragiskatos.tmdbclient_class.data.Artists
-import com.nfragiskatos.tmdbclient_class.data.Movies
-import com.nfragiskatos.tmdbclient_class.data.TVShows
+import com.nfragiskatos.tmdbclient_class.data.model.artist.Artists
+import com.nfragiskatos.tmdbclient_class.data.model.movie.Movies
+import com.nfragiskatos.tmdbclient_class.data.model.tvshow.TVShows
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

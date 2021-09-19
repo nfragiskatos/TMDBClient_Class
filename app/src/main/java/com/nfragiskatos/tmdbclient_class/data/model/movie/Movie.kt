@@ -1,17 +1,17 @@
-package com.nfragiskatos.tmdbclient_class.data
+package com.nfragiskatos.tmdbclient_class.data.model.movie
 
 
 import com.google.gson.annotations.SerializedName
 
-data class TVShow(
-    @SerializedName("first_air_date")
-    val firstAirDate: String?,
+data class Movie(
     @SerializedName("id")
     val id: Int,
-    @SerializedName("name")
-    val name: String?,
     @SerializedName("overview")
     val overview: String?,
     @SerializedName("poster_path")
     val posterPath: String?,
+    @SerializedName("release_date")
+    val releaseDate: String?,
+    @SerializedName("title")
+    val title: String?,
 )
