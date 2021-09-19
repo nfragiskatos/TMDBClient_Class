@@ -10,5 +10,6 @@ class MainActivity : AppCompatActivity() {
 
         // Access api key
 //        BuildConfig.THEMOVIEDB_API_KEY
+
     }
 }
