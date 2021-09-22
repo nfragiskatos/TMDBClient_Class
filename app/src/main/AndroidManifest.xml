@@ -13,7 +13,7 @@
             android:name=".presentation.artist.ArtistActivity"
             android:exported="true" />
         <activity
-            android:name=".presentation.tvshows.TVShowActivity"
+            android:name=".presentation.tvshow.TVShowActivity"
             android:exported="true" />
         <activity
             android:name=".presentation.movie.MovieActivity"

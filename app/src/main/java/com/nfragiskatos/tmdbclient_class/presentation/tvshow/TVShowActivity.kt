@@ -1,4 +1,4 @@
-package com.nfragiskatos.tmdbclient_class.presentation.tvshows
+package com.nfragiskatos.tmdbclient_class.presentation.tvshow
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

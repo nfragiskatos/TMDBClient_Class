@@ -8,7 +8,7 @@ import com.nfragiskatos.tmdbclient_class.R
 import com.nfragiskatos.tmdbclient_class.databinding.ActivityHomeBinding
 import com.nfragiskatos.tmdbclient_class.presentation.artist.ArtistActivity
 import com.nfragiskatos.tmdbclient_class.presentation.movie.MovieActivity
-import com.nfragiskatos.tmdbclient_class.presentation.tvshows.TVShowActivity
+import com.nfragiskatos.tmdbclient_class.presentation.tvshow.TVShowActivity
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
