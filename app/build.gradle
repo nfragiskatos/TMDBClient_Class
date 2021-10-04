@@ -34,6 +34,8 @@ android {
 
         buildConfigField "String", "THEMOVIEDB_API_KEY", theMovieDbApiKey
         resValue "string", "THEMOVIEDB_API_KEY", theMovieDbApiKey
+
+        buildConfigField "String", "BASE_URL", "\"https://api.themoviedb.org/3/\""
     }
 
     buildTypes {
