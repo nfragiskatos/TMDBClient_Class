@@ -8,5 +8,6 @@ import retrofit2.Response
 
 class ArtistRemoteDataSourceImpl(private val service: TMDBService) : ArtistRemoteDataSource {
 
-    override suspend fun getArtists(): Response<Artists> = service.getPopularArtists(BuildConfig.APPLICATION_ID)
+    override suspend fun getArtists(): Response<Artists> =
+        service.getPopularArtists(BuildConfig.THEMOVIEDB_API_KEY)
 }

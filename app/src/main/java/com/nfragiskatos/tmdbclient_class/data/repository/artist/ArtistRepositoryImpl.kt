@@ -31,6 +31,7 @@ class ArtistRepositoryImpl(
             if (body != null) {
                 artists = body.artists
             }
+            val errorBody = response.errorBody()
 
         } catch (e: Exception) {
             Log.i("MYTAG", e.message.toString())
