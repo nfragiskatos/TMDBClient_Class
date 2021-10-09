@@ -11,12 +11,14 @@ class TVShowRepositoryImpl(
     private val tvShowRemoteDataSource: TVShowRemoteDataSource,
     private val tvShowLocalDataSource: TVShowLocalDataSource, private val tvShowCacheDataSource: TVShowCacheDataSource
 ) : TVShowRepository {
-    override suspend fun getTVShows(): List<TVShow>? {
-        TODO("Not yet implemented")
-    }
+    override suspend fun getTVShows(): List<TVShow>? = getTVShowsFromCache()
 
     override suspend fun updateTVShows(): List<TVShow>? {
-        TODO("Not yet implemented")
+        val newTVShows = getTVShowsFromAPI()
+        tvShowLocalDataSource.clearAll()
+        tvShowLocalDataSource.saveTVShowsToDB(newTVShows)
+        tvShowCacheDataSource.saveTVShowsToCache(newTVShows)
+        return newTVShows
     }
 
     suspend fun getTVShowsFromAPI(): List<TVShow> {
